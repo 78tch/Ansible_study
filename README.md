@@ -12,10 +12,17 @@ Ansible の使い方を勉強していく過程です
 ８．別ディレクトリで３つめのVMを立ててssh で接続  
 ９．Vagrant ファイルのまとめ  
 
+公式HP  
 https://docs.vagrantup.com  
+boxを探す  
 https://vagrantcloud.com/search
+コマンドラインのマニュアル  
+https://www.vagrantup.com/docs/cli/  
+Vagrantfileのマニュアル
+https://www.vagrantup.com/docs/vagrantfile/  
 
 # 進め方・導入編
+
 １．Ansible を導入  
 ２．  
 ３．  
