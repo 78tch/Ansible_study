@@ -12,7 +12,7 @@ Ansible の使い方を勉強していく過程です
 ８．別ディレクトリで３つめのVMを立ててssh で接続  
 ９．Vagrant ファイルのまとめ  
 
-https://docs.vagrantup.com
+https://docs.vagrantup.com  
 https://vagrantcloud.com/search
 
 # 進め方・導入編
