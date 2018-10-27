@@ -14,12 +14,20 @@ Ansible の使い方を勉強していく過程です
 
 公式HP  
 https://docs.vagrantup.com  
-boxを探す  追記
+boxを探す  
 https://vagrantcloud.com/search  
 コマンドラインのマニュアル  
 https://www.vagrantup.com/docs/cli/  
 Vagrantfileのマニュアル
 https://www.vagrantup.com/docs/vagrantfile/  
+設定可能な項目  
+config.vm  
+config.ssh  
+config.winrm  
+config.winssh  
+config.vagrant  
+記法  
+https://www.vagrantup.com/docs/vagrantfile/tips.html  
 
 # 進め方・導入編
 
