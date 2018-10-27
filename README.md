@@ -18,7 +18,7 @@ boxを探す
 https://vagrantcloud.com/search  
 コマンドラインのマニュアル  
 https://www.vagrantup.com/docs/cli/  
-Vagrantfileのマニュアル
+Vagrantfileのマニュアル  
 https://www.vagrantup.com/docs/vagrantfile/  
 設定可能な項目  
 config.vm  
