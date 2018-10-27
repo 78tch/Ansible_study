@@ -14,8 +14,8 @@ Ansible の使い方を勉強していく過程です
 
 公式HP  
 https://docs.vagrantup.com  
-boxを探す  
-https://vagrantcloud.com/search
+boxを探す  追記
+https://vagrantcloud.com/search  
 コマンドラインのマニュアル  
 https://www.vagrantup.com/docs/cli/  
 Vagrantfileのマニュアル
