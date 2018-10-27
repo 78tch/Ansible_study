@@ -28,6 +28,11 @@ https://www.vagrantup.com/docs/vagrantfile/
 |config.winssh|winssh|  
 |config.vagrant|vagrant|  
 
+| TH1 | TH2 |
+----|----
+| TD1 | TD3 |
+| TD2 | TD4 |
+
 記法  
 https://www.vagrantup.com/docs/vagrantfile/tips.html  
 
