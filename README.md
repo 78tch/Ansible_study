@@ -20,12 +20,14 @@ https://vagrantcloud.com/search
 https://www.vagrantup.com/docs/cli/  
 Vagrantfileのマニュアル  
 https://www.vagrantup.com/docs/vagrantfile/  
-設定可能な項目  
-config.vm  
-config.ssh  
-config.winrm  
-config.winssh  
-config.vagrant  
+|設定可能な項目|内容|  
+|-------------|----|
+|config.vm|マシン|  
+|config.ssh|接続|  
+|config.winrm|winrm|  
+|config.winssh|winssh|  
+|config.vagrant|vagrant|  
+
 記法  
 https://www.vagrantup.com/docs/vagrantfile/tips.html  
 
