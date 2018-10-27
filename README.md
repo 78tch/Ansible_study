@@ -1,7 +1,6 @@
 # Ansible_study
 Ansible の使い方を勉強していく過程です
-
-![alt](https://github.com/78tch/Ansible_study/blob/master/images/atom.jpg)
+<img src="https://github.com/78tch/Ansible_study/blob/master/images/atom.jpg"/>
 
 # 進め方・準備編
 １．Ubuntu マシンにVagrantとVirtualboxを導入  
