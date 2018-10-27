@@ -20,18 +20,14 @@ https://vagrantcloud.com/search
 https://www.vagrantup.com/docs/cli/  
 Vagrantfileのマニュアル  
 https://www.vagrantup.com/docs/vagrantfile/  
-| 設定可能な項目 | 内容 |
-| ---- | ---- |
-| config.vm | マシン |
-| config.ssh | 接続 |
-| config.winrm | winrm |
-| config.winssh | winssh |
-| config.vagrant | vagrant |
 
 | 設定可能な項目 | 内容 |
 ----|----
-| TD1 | TD3 |
-| TD2 | TD4 |
+| config.vm | TD3 |
+| config.ssh | TD4 |
+| config.winrm | TD4 |
+| config.winssh | TD4 |
+| config.vagrant | TD4 |
 
 記法  
 https://www.vagrantup.com/docs/vagrantfile/tips.html  
