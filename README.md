@@ -1,6 +1,8 @@
 # Ansible_study
 Ansible の使い方を勉強していく過程です
 
+<img src="attach:atom.jpg_large">
+
 # 進め方・準備編
 １．Ubuntu マシンにVagrantとVirtualboxを導入  
 ２．Vagrant 用のディレクトリを作って初期化  
