@@ -2,19 +2,18 @@
 Ansible の使い方を勉強していく過程です
 <img src="https://github.com/78tch/Ansible_study/blob/master/images/atom.jpg"/>
 
-# 進め方・概略
-１．Ubuntu マシンにVagrantとVirtualboxを導入
-２．まず１台のVMを立てて、Vagrantfileについて学ぶ。
-３．２台のVMを立てて、VM間でSSH接続する。
-４．
-５．
-
-
 # 第１段階・Vagrant でテスト環境準備編
 １．Ubuntu マシンにVagrantとVirtualboxを導入  
+`sudo apt-get install virtualbox vagrant`  
 ２．Vagrant 用のディレクトリを作って初期化  
+`user00@HostMachine:~$ mkdir hoge`  
+`user00@HostMachine:~$cd ./hoge`  
+`user00@HostMachine:~/hoge$vagrant init`  
 ３．何も設定せず試す  
+`user00@HostMachine:~/hoge$vagrant up`  
+エラーメッセージを読む。
 ４．boxを選定し、boxの設定のみして試す  
+
 ５．ssh で接続してみる、キーはどこにある？ほかにどんな設定が可能なのか
 ６．hostname と ip を設定  
 ７．同一ディレクトリで２つのVMを立ててssh で接続  
