@@ -24,7 +24,7 @@ https://www.vagrantup.com/docs/vagrantfile/
 
 | 設定可能な項目 | 内容 |
 ----|----
-| config.vm | TD3 |
+| config.vm | 仮想マシンの設定 |
 | config.ssh | TD4 |
 | config.winrm | TD4 |
 | config.winssh | TD4 |
