@@ -1,6 +1,25 @@
 # Vagrantfile
 Vagrantfile の設定方法を勉強していく過程です
 
+Vagrant.configure("2") do |config|
+config.vm.box = "ubuntu/cosmic64"
+  config.vm.define :web do |web|
+    web.vm.hostname = "web"
+    web.vm.network :private_network, ip:"192.168.33.11"
+    web.vm.provision :shell, :inline => <<-EOT
+      echo "Hello Web"
+    EOT
+  end
+
+  config.vm.define :db do |db|
+    db.vm.hostname = "db"
+    db.vm.network :private_network, ip:"192.168.33.12"
+    db.vm.provision :shell, :inline => <<-EOT
+      echo "Hello Db"
+    EOT
+  end
+end
+
 
 １．config.vm  
 
