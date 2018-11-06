@@ -1,6 +1,7 @@
 # Ansible_study
 Ansible の使い方を勉強していく過程です
 ![Ansible](images/atom.jpg)
+<img src="images/atom.jpg">
 
 # １．概要
 1.  Ubuntu 上にVirtualbox と Vagrant で  
