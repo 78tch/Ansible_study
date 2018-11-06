@@ -2,9 +2,21 @@
 Ansible の使い方を勉強していく過程です
 ![Ansible](images/atom.jpg)
 
+# １．概要
+1.  Ubuntu 上にVirtualbox と Vagrant で  
+2. SSH
+
 # 第１段階・Vagrant でテスト環境準備編
 １．Ubuntu マシンにVagrantとVirtualboxを導入  
-`sudo apt-get install virtualbox vagrant`  
+```sh
+$ sudo apt-get install virtualbox vagrant
+```
+
+a  
+`user `
+
+
+udo apt-get install virtualbox vagrant ''  
 ２．Vagrant 用のディレクトリを作って初期化  
 `user00@HostMachine:~$ mkdir hoge`  
 `user00@HostMachine:~$cd ./hoge`  
