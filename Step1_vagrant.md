@@ -10,7 +10,7 @@ $ sudo apt-get install virtualbox vagrant
 2. Vagrant 用のディレクトリを作って初期化（Vagrant init）  
 ```
 $ mkdir MyLesson
-$ cd .MyLesson
+$ cd ./MyLesson
 $ ls
 $ vagrant status
 $ vagrant box list
