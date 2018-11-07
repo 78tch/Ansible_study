@@ -1,25 +1,24 @@
 # Ansible_study
-Ansible の使い方を勉強していく過程です
-<img src="https://github.com/78tch/Ansible_study/blob/master/images/atom.jpg"/>
+Ansible の使い方を勉強していく過程です。  
+<img src="images/atom.jpg" alt="image">
 
 # 進め方・概略
-１．Ubuntu マシンにVagrantとVirtualboxを導入
-２．まず１台のVMを立てて、Vagrantfileについて学ぶ。
-３．２台のVMを立てて、VM間でSSH接続する。
-４．
-５．
+1. Ansible はSSH接続の環境が必要なので、Ubuntuマシン上でVirtualboxとVagrant でSSH接続環境を作る。  
+2.  
 
 
-# 第１段階・Vagrant でテスト環境準備編
-１．Ubuntu マシンにVagrantとVirtualboxを導入  
-２．Vagrant 用のディレクトリを作って初期化  
-３．何も設定せず試す  
-４．boxを選定し、boxの設定のみして試す  
-５．ssh で接続してみる、キーはどこにある？ほかにどんな設定が可能なのか
-６．hostname と ip を設定  
-７．同一ディレクトリで２つのVMを立ててssh で接続  
-８．別ディレクトリで３つめのVMを立ててssh で接続  
-９．Vagrant ファイルのまとめ  
+## Ubuntu + Virtualbox + Vagrant でSSH接続環境準備編
+1. Ubuntu マシンにapt-get で VagrantとVirtualboxを導入  
+2. Vagrant 用のディレクトリを作って初期化（Vagrant init）  
+3. 何も設定せず試す（Vagrant status/box list/up）  
+4. Vagrantfile に box の設定のみして試す  
+5. ホストマシンから VM に ssh で接続してみる。キーはどこにある？ほかにどんな設定が可能なのか（vagrant ssh）  
+6. Vagrantfile で hostname と ip を設定してみる。  
+7. ひとつのVagrantfile で２つのVMを設定してみる。  
+8. VM 間でSSH接続する。（ssh-keygen）  
+9. SSHで必要なファイルとその格納場所のまとめ（/etc/ssh/ ~/.ssh/）  
+10. 別ディレクトリにもvagrant 環境をつくり、３つめのVMを立てて ssh 接続してみる。  
+11. Vagrantfile のまとめ  
 
 公式HP  
 https://docs.vagrantup.com  
