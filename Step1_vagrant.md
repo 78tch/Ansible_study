@@ -2,7 +2,8 @@
 Ansible の使い方を勉強していく過程です
 <img src="images/atom.jpg">
 
-## Ubuntu + Virtualbox + Vagrant でSSH接続環境準備編
+## Ubuntu + Virtualbox + Vagrant でSSH接続環境の前準備編
+Ansible のホストと対象マシンとして、２台の仮想マシンを用意します。１台の仮想マシンからもう１台の仮想マシンにSSHで接続できるようにしていきますが、ここではまず、仮想マシンを２台用意するところまでを記します。
 1. Ubuntu マシンにapt-get で VagrantとVirtualboxを導入  
 ```sh
 $ sudo apt-get install virtualbox vagrant
@@ -142,27 +143,6 @@ https://www.vagrantup.com/docs/vagrantfile/
 記法  
 https://www.vagrantup.com/docs/vagrantfile/tips.html  
 
-# 第１段階・Vagrant でテスト環境準備編
-１．Ubuntu マシンにVagrantとVirtualboxを導入  
-```sh
-$ sudo apt-get install virtualbox vagrant
-```
-
-a  
-`user `
-
-
-udo apt-get install virtualbox vagrant ''  
-２．Vagrant 用のディレクトリを作って初期化  
-`user00@HostMachine:~$ mkdir hoge`  
-`user00@HostMachine:~$cd ./hoge`  
-`user00@HostMachine:~/hoge$vagrant init`  
-３．何も設定せず試す  
-`user00@HostMachine:~/hoge$vagrant up`  
-エラーメッセージを読む。  
-４．boxを選定し、boxの設定のみして試す  
-５．ボックスのリスト、ステータスをみる。デストロイ、リムーブを試す。  
-６．ssh で接続してみる、キーはどこにある？ほかにどんな設定が可能なのか  
 　~/.ssh/authorized_keys  
  ~/.ssh/known_hosts  
  /etc/ssh/ssh_host_hoge_key  
