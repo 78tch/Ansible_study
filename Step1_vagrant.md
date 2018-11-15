@@ -78,7 +78,7 @@ vagrant@default :$ ifconfig
 $ hostname  
 $ ifconfig  
 ```  
-7. いちど仮想マシンを削除して作り直してみる。  
+7. いちど仮想マシンを削除しする。て作り直してみる。  
 ```sh  
 $ vagrant destroy  
 $ vagrant up  
@@ -92,6 +92,31 @@ $ vagrant up
 一時的にVagrantfile を元に戻して、<kbd>vagrant destroy</kbd>すれば消せる。  
 改めて<kbd>vagrant up</kbd>してから<kbd>hostname</kbd>と<kbd>ifconfig</kbd>してみる。  
 9. ひとつのVagrantfile で２つのVMを設定してみる。  
+`config.vm.define :web do |web|`  
+`web.vm.hostname = "web"`  
+`web.vm.network :private_network, ip:"192.168.33.11"`  
+`end`  
+`config.vm.define :db do |db|`  
+`db.vm.hostname = "db"`  
+`db.vm.network :private_network, ip:"192.168.33.12"`  
+`end`  
+こうすると、<kbd>vagrant up</kbd>すれば仮想マシン「web」と「db」が立ち上がる。  
+複数の仮想マシンが定義されたVagrant 環境では、コマンドの引数に仮想マシン名を指定して、対象を区別する。  
+```sh  
+$ vagrant ssh  
+$ vagrant ssh web  
+$ vagrant halt db  
+$ vagrant status  
+$ vagrant up db  
+$ vagrant status  
+$ vagrant destory web  
+$ vagrant status  
+$ vagrant halt db  
+$ vagrant status  
+$ vagrant up web  
+$ vagrant status  
+```  
+など、いろいろ試してみる。  
 10. VM 間でSSH接続する。（ssh-keygen）  
 11. SSHで必要なファイルとその格納場所のまとめ（/etc/ssh/ ~/.ssh/）  
 12.  別ディレクトリにもvagrant 環境をつくり、３つめのVMを立てて ssh 接続してみる。  
