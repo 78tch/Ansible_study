@@ -12,7 +12,8 @@ me@my_pc:~/$ mkdir My_playbooks
 me@my_pc:~/$ cd My_playbooks  
 me@my_pc:~/$ vagrant init ubuntu/cosmic64  
 me@my_pc:~/$ vagrant ssh  
-vagrant@default:~/$
+vagrant@default:~/$ sudo apt-get update  
+vagrant@default:~/$ sudo apt-get install python  
 ```
 
 公式HP  
