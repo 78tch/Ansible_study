@@ -12,6 +12,7 @@ me@my_pc:~/$ mkdir My_playbooks
 me@my_pc:~/$ cd My_playbooks  
 me@my_pc:~/$ vagrant init ubuntu/cosmic64  
 me@my_pc:~/$ vagrant ssh  
+vagrant@default:~/$
 ```
 
 公式HP  
