@@ -10,10 +10,10 @@ SSH接続では、「ホスト認証」と「ユーザー認証」の２つの�
 マシン|鍵の種類|鍵の置き場所  
  -|-|-  
 SSHサーバ|サーバの秘密鍵|`/etc/ssh/ssh_host_hoge_key`  
-  |サーバの公開鍵|`/etc/ssh/ssh_host_hoge_key.pub`  
-  |ユーザーの公開鍵|`~/.ssh/authorized_keys`  
+ - |サーバの公開鍵|`/etc/ssh/ssh_host_hoge_key.pub`  
+ - |ユーザーの公開鍵|`~/.ssh/authorized_keys`  
 SSHクライアント|サーバーの公開鍵|`~/.ssh/known_hosts`  
-  |ユーザーの公開鍵|`~/.ssh/authorized_keys`  
+ - |ユーザーの公開鍵|`~/.ssh/authorized_keys`  
 
 1. まず、仮想マシンを２台とも立ち上げ、<kbd>ping</kbd> コマンドで疎通を確認します。  
 ```sh
