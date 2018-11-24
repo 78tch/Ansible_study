@@ -22,6 +22,9 @@ Me@Local_PC:~$ ansible localhost -m shell -a "echo Hello World!"
 
 ## Ubuntu + Virtualbox + Vagrant でSSH接続環境準備編
 1. Ubuntu マシンにapt-get で VagrantとVirtualboxを導入  
+```sh  
+Me@Local_PC:~$ sudo apt-get install virtualbox vagrant    
+```  
 2. Vagrant 用のディレクトリを作って初期化（Vagrant init）  
 3. 何も設定せず試す（Vagrant status/box list/up）  
 4. Vagrantfile に box の設定のみして試す  
