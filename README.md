@@ -26,6 +26,11 @@ Me@Local_PC:~$ ansible localhost -m shell -a "echo Hello World!"
 Me@Local_PC:~$ sudo apt-get install virtualbox vagrant    
 ```  
 2. Vagrant 用のディレクトリを作って初期化（Vagrant init）  
+```sh  
+Me@Local_PC:~$ mkdir My_test  
+Me@Local_PC:~$ cd My_test  
+Me@Local_PC:~/My_test$ vagrant init    
+```  
 3. 何も設定せず試す（Vagrant status/box list/up）  
 4. Vagrantfile に box の設定のみして試す  
 ```sh  
