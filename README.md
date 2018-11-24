@@ -12,7 +12,11 @@ Ansible の使い方を勉強していく過程です。
 ```sh
 Me@Local_Machine:~$ sudo apt-get install ansible  
 ```
-2. Ansible を実行してみます。
+2. ローカルマシン自身に対してAnsible を実行してみます。  
+```sh
+Me@Local_Machine:~$ ansible localhost -m shell -a "echo Hello World!"  
+```
+<img src="images/LocalAnsible.png" alt="image">  
 
 ## Ubuntu + Virtualbox + Vagrant でSSH接続環境準備編
 1. Ubuntu マシンにapt-get で VagrantとVirtualboxを導入  
