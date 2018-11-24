@@ -3,9 +3,16 @@ Ansible の使い方を勉強していく過程です。
 <img src="images/atom.jpg" alt="image">
 
 # 進め方・概略
-1. Ansible はSSH接続の環境が必要なので、Ubuntuマシン上でVirtualboxとVagrant でSSH接続環境を作る。  
-2.  
+1. まずはローカルマシンにおいて、自分自身に対してAnsible を実行するということをしてみます。  
+2. ローカルマシン上でAnsible が実行できたら、次はリモートマシンに対してAnsible を実行したいところです。しかし、そのためには、リモートマシンに対してSSH接続できる必要があります。また、いろいろと検証するには、仮想マシンを気軽に立ち上げては破棄できる環境があると便利です。Ubuntuマシン上でVirtualboxとVagrant でSSH接続環境を作っていきます。  
+3. ローカル・リモートのSSH接続環境ができたら、いよいよAnsible でリモートの環境構築を試していきます。  
 
+## Ubuntu マシンにAnsible をインストール、まずは"Hello World!"
+1. Ubuntu マシンにapt-get で ansible を導入。  
+```sh
+Me@Local_Machine:~$ sudo apt-get install ansible  
+```
+2. Ansible を実行してみます。
 
 ## Ubuntu + Virtualbox + Vagrant でSSH接続環境準備編
 1. Ubuntu マシンにapt-get で VagrantとVirtualboxを導入  
