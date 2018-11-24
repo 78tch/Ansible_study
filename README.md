@@ -23,7 +23,7 @@ Me@Local_PC:~$ ansible localhost -m shell -a "echo Hello World!"
 2. Vagrant 用のディレクトリを作って初期化（Vagrant init）  
 3. 何も設定せず試す（Vagrant status/box list/up）  
 4. Vagrantfile に box の設定のみして試す  
-5. ホストマシンから VM に ssh で接続してみる。キーはどこにある？ほかにどんな設定が可能なのか（vagrant ssh）  
+5. ホストマシンから VM に ssh で接続してみる。キーはどこにある？ほかにどんな設定が可能なのか（vagrant ssh） 
 6. Vagrantfile で hostname と ip を設定してみる。  
 7. ひとつのVagrantfile で２つのVMを設定してみる。  
 8. VM 間でSSH接続する。（ssh-keygen）  
