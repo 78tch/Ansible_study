@@ -32,6 +32,11 @@ Me@Local_PC:~$ cd My_test
 Me@Local_PC:~/My_test$ vagrant init    
 ```  
 3. 何も設定せず試す（Vagrant status/box list/up）  
+```sh  
+Me@Local_PC:~/My_test$ vagrant status  
+Me@Local_PC:~/My_test$ vagrant up  
+Me@Local_PC:~/My_test$ vagrant status  
+```  
 4. Vagrantfile に box の設定のみして試す  
 ```sh  
 Me@Local_PC:~$ rm Vagrantfile  
