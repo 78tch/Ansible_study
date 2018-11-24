@@ -10,11 +10,11 @@ Ansible の使い方を勉強していく過程です。
 ## Ubuntu マシンにAnsible をインストール、まずは"Hello World!"
 1. Ubuntu マシンにapt-get で ansible を導入。  
 ```sh
-Me@Local_Machine:~$ sudo apt-get install ansible  
+Me@Local_PC:~$ sudo apt-get install ansible  
 ```
 2. ローカルマシン自身に対してAnsible を実行してみます。  
 ```sh
-Me@Local_Machine:~$ ansible localhost -m shell -a "echo Hello World!"  
+Me@Local_PC:~$ ansible localhost -m shell -a "echo Hello World!"  
 ```
 <img src="images/LocalAnsible.png" alt="image">  
 
