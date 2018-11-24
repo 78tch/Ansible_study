@@ -1,6 +1,6 @@
 # Ansible_study
 Ansible の使い方を勉強していく過程です。  
-<img src="images/VSCode.png" alt="image">
+<img src="images/ansible.gif" alt="image">
 
 # 進め方・概略
 1. まずはローカルマシンにおいて、自分自身に対してAnsible を実行するということをしてみます。  
