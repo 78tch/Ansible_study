@@ -5,10 +5,13 @@ Ansible の使い方を勉強していく過程です
 ## 学習環境として Ubuntu + Visual Studio Code + Github で学習環境の構築
 学習を進めるにあたり、学習メモをVSCode でMarkdown 形式で書き残し、Github にアップしていきます。  
   
-1. Ubuntu マシンにapt-get で VagrantとVirtualboxを導入  
-```sh
-$ sudo apt-get install virtualbox vagrant
-```
+1. Ubuntu マシンにapt-get で git を導入  
+```sh  
+$ sudo apt-get install git  
+$ git config --global user.name "My_Name"  
+$ git config --global user.email "My_email"  
+$ git config --global credential.helper store
+```  
 2. Vagrant 用のディレクトリを作って初期化（Vagrant init）  
 ```sh
 $ mkdir MyLesson
