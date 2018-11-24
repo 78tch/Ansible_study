@@ -12,21 +12,8 @@ $ git config --global user.name "My_Name"
 $ git config --global user.email "My_email"  
 $ git config --global credential.helper store
 ```  
-2. Vagrant 用のディレクトリを作って初期化（Vagrant init）  
-```sh
-$ mkdir MyLesson
-$ cd ./MyLesson
-$ ls
-$ vagrant status
-$ vagrant box list
-$ vagsrant up
-$ vagrant init
-$ ls
-```
-3. 何も設定せず試す（Vagrant status/box list/up）  
-```sh
-$ vagrant up
-```
+2. Visual Studio Code を公式HP からインストールし、必要な機能拡張（Extensions）を導入する。  
+3.Github で学習用のレポジトリを作り、VSCode でローカルにpull する。  
 4. Vagrantfile に box の設定のみして試す  
 ```sh
 $ vi Vagrantfile
