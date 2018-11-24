@@ -2,7 +2,7 @@
 Ansible の使い方を勉強していく過程です
 <img src="images/atom.jpg">
 
-## 学習環境として Ubuntu + Visual Studio Code Github で学習環境の構築
+## 学習環境として Ubuntu + Visual Studio Code + Github で学習環境の構築
 学習を進めるにあたり、学習メモをVSCode でMarkdown 形式で書き残し、Github にアップしていきます。  
   
 1. Ubuntu マシンにapt-get で VagrantとVirtualboxを導入  
