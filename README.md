@@ -16,7 +16,8 @@ Me@Local_PC:~$ sudo apt-get install ansible
 2. ローカルマシン自身に対してAnsible を実行してみます。  
 ```sh
 Me@Local_PC:~$ ansible localhost -m shell -a "echo Hello World!"  
-```
+```  
+  
 <img src="images/LocalAnsible.png" alt="image">  
 
 ## Ubuntu + Virtualbox + Vagrant でSSH接続環境準備編
