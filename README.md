@@ -1,5 +1,6 @@
 # Ansible_study
 Ansible の使い方を勉強していく過程です。  
+下のモーションGIF はVagrant で仮想マシンを立ててその仮想マシン上でAnsibleでコマンドを実行している様子です。２分ぐらい。
 <img src="images/ansible.gif" alt="image">
 
 # 進め方・概略
