@@ -30,6 +30,9 @@ Me@Local_PC:~$ rm Vagrantfile
 Me@Local_PC:~$ vagrant init ubuntu/cosmic64  
 ```  
 5. ホストマシンから VM に ssh で接続してみる。キーはどこにある？ほかにどんな設定が可能なのか（vagrant ssh） 
+```sh  
+Me@Local_PC:~$ vagrant ssh  
+```  
 6. Vagrantfile で hostname と ip を設定してみる。  
 7. ひとつのVagrantfile で２つのVMを設定してみる。  
 8. VM 間でSSH接続する。（ssh-keygen）  
