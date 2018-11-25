@@ -1,6 +1,6 @@
 # Ansible_study
 Ansible の使い方を勉強していく過程です
-<img src="images/atom.jpg">
+<img src="images/VSCode.png">
 
 ## Ubuntu + Virtualbox + Vagrant でSSH接続環境の前準備編
 前回、２台の仮想マシンを用意しましたので、ここでは１台の仮想マシンからもう１台の仮想マシンにSSHで接続できるようにしていきます。  
