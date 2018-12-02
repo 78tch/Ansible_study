@@ -94,7 +94,9 @@ vagrant@web:~$
 `/etc/ssh/ssh_host_hoge_key`  
 `/etc/ssh/ssh_host_hoge_key.pub`  
 別ディレクトリにもvagrant 環境をつくり、３つめのVMを立てて ssh 接続してみる。  
-6. まとめ
+7. まとめ
+
+
 
 公式HP  
 https://docs.vagrantup.com  
