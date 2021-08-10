@@ -37,6 +37,9 @@ $ vagrant up
 というディレクトリも作成される。  
 box ファイルは　`~/.vagrant.d`　配下に保存され、仮想マシンの雛形として利用される。実際の仮想マシンは、これを　`~/VirtualBox VMs`　配下にコピーして格納される。  
 待っている間に、ホームディレクトリを「隠しファイルを表示する」で表示しておくとこれらのディレクトリが作成されるのが見られたり、またVirtualbox マネージャー 画面を表示しておくと、vagrant コマンドによって仮想マシンが登録されて起動・シャットダウンされるのが確認できる。  
+通信環境がない（貧弱な）場合、boxのアップデートチェックをしないようにもできる。（非推奨だが学習時にはありうる。）  
+
+` config.vm.box_check_update = false `
 
 ファイル|置き場所|役割  
 --|--|--  
@@ -47,6 +50,7 @@ boxファイル|~/.vagrant.d|仮想マシンの雛形
 ![vagrant_init](images/vagrant_init.png)
 
 5. ホストマシンから VM に ssh で接続してみる。キーはどこにある？ほかにどんな設定が可能なのか（vagrant ssh）  
+
 ```sh
 $ vagrant status
 $ vagrant box list  
@@ -55,13 +59,21 @@ $ vagrant status
 $ vagrant up
 $ vagrant status
 ```  
+
 この状態で、vm にssh 接続してみる。  
+
 ```sh  
 $ vagrant ssh-config  
+```  
+これにより、SSHに関する情報が表示される。  
+秘密鍵の場所は「IdentityFile」の項でパスが書いてある。
+
+```sh  
 $ vagrant ssh  
 vagrant@default :$ hostname  
 vagrant@default :$ ifconfig
 ```  
+
 6. Vagrantfile で hostname と ip を設定してみる。  
 `config.vm.hostname = "web"`  
 `config.vm.network :private_network, ip:"192.168.33.11"`  
