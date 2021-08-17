@@ -13,7 +13,10 @@ boxファイル|仮想マシンの雛形|~/.vagrant.d/boxes/
 ●vagrantサブコマンド：
 サブコマンド|役割  
 --|--  
+-v |バージョンの表示
+-h|ヘルプの表示。サブコマンドにも指定可。
 init|ディレクトリの初期化、Vagrantfileを生成
+init ubuntu/hirsute64|BOXを指定して初期化
 status|仮想マシンの状態の表示
 up|仮想マシンを起動、無ければ作成して起動
 halt|仮想マシンをシャットダウン
