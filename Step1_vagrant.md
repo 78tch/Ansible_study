@@ -23,12 +23,16 @@ halt|仮想マシンをシャットダウン
 destroy|仮想マシンを削除
 ssh|仮想マシンにSSHで接続
 ssh-config|SSHの設定情報を表示
+box list|BOXファイルの列記
+box remove hoge|box(hoge)を削除
 
 ●Vagrantfileでconfig.vmで設定できる項目：
 項目|具体例|意味  
 --|--|--  
 box|= "ubuntu/hirsute64"|boxの指定
 box_check_update|= false|boxの更新チェックをしない
+hostname|= "hoge"|仮想マシンのhostnameを指定
+network||
 
 ●ポイント：
 項目|内容
