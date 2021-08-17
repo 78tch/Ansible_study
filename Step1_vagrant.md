@@ -20,6 +20,7 @@ init ubuntu/hirsute64|BOXを指定して初期化
 status|仮想マシンの状態の表示
 up|仮想マシンを起動、無ければ作成して起動
 halt|仮想マシンをシャットダウン
+reload|仮想マシンを再起動
 destroy|仮想マシンを削除
 ssh|仮想マシンにSSHで接続
 ssh-config|SSHの設定情報を表示
