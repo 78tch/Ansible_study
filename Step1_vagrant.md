@@ -33,7 +33,17 @@ box remove hoge|box(hoge)を削除
 box|= "ubuntu/hirsute64"|boxの指定
 box_check_update|= false|boxの更新チェックをしない
 hostname|= "hoge"|仮想マシンのhostnameを指定
-network||
+network|別掲|内部か外部の２種類あり
+provision|"shell",inline: "echo Hello, World"|up時の処理
+
+●network
+|ポートフォワーディング|
+|--|
+| config.vm.network "forwarded_port", guest: 80, host: 8080|
+
+|外部ネットワーク|
+|--|
+|config.vm.network "public_network", ip: "192.168.0.2"|
 
 ●ポイント：
 項目|内容
