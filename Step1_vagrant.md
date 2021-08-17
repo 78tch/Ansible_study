@@ -5,10 +5,10 @@ Ansible の使い方を勉強していく過程です
 ●Vagrant に関連するファイル：
 ファイル|役割|置き場所  
 --|--|--  
-Vagrantfile|仮想マシンの設定|初期化したディレクトリ  
+Vagrantfile|仮想マシンの設定|初期化したディレクトリ（./）  
 boxファイル|仮想マシンの雛形|~/.vagrant.d/boxes/  
 仮想マシンファイル|実際の仮想マシンのファイル|~/VirtualBox VMs  
-
+SSH秘密鍵|仮想マシンのログインユーザー|./.vagrant/machines/  default/virtualbox/  private_key
 
 ●vagrantサブコマンド：
 サブコマンド|役割  
@@ -24,16 +24,17 @@ destroy|仮想マシンを削除
 ssh|仮想マシンにSSHで接続
 ssh-config|SSHの設定情報を表示
 
-●Vagrantfileで設定できる項目：
-項目|具体例  
---|--  
-init|ディレクトリの初期化、Vagrantfileを生成
+●Vagrantfileでconfig.vmで設定できる項目：
+項目|具体例|意味  
+--|--|--  
+box|= "ubuntu/hirsute64"|boxの指定
+box_check_update|= false|boxの更新チェックをしない
 
 ●ポイント：
 項目|内容
 --|--
 共有フォルダ|ホストのVagrantディレクトリを、仮想マシンの/vagrantでマウント
-SSHのログインユーザーの秘密鍵の場所|./.vagrant/machines/default/virtualbox/private_key
+
 
 
 ## Ubuntu + Virtualbox + Vagrant でSSH接続環境の前準備編
