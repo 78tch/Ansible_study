@@ -41,6 +41,11 @@ provision|"shell",inline: "echo Hello, World"|up時の処理
 |--|
 | config.vm.network "forwarded_port", guest: 80, host: 8080|
 
+|内部ネットワーク|
+|--|
+|config.vm.network "private_network", ip: "192.168.33.10"|
+
+
 |外部ネットワーク|
 |--|
 |config.vm.network "public_network", ip: "192.168.0.2"|
