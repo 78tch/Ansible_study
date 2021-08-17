@@ -2,6 +2,37 @@
 Ansible の使い方を勉強していく過程です
 <img src="images/atom.jpg">
 
+●Vagrant に関連するファイル：
+ファイル|役割|置き場所  
+--|--|--  
+Vagrantfile|仮想マシンの設定|初期化したディレクトリ  
+boxファイル|仮想マシンの雛形|~/.vagrant.d/boxes/  
+仮想マシンファイル|実際の仮想マシンのファイル|~/VirtualBox VMs  
+
+
+●vagrantサブコマンド：
+サブコマンド|役割  
+--|--  
+init|ディレクトリの初期化、Vagrantfileを生成
+status|仮想マシンの状態の表示
+up|仮想マシンを起動、無ければ作成して起動
+halt|仮想マシンをシャットダウン
+destroy|仮想マシンを削除
+ssh|仮想マシンにSSHで接続
+ssh-config|SSHの設定情報を表示
+
+●Vagrantfileで設定できる項目：
+項目|具体例  
+--|--  
+init|ディレクトリの初期化、Vagrantfileを生成
+
+●ポイント：
+項目|内容
+--|--
+共有フォルダ|ホストのVagrantディレクトリを、仮想マシンの/vagrantでマウント
+SSHのログインユーザーの秘密鍵の場所|./.vagrant/machines/default/virtualbox/private_key
+
+
 ## Ubuntu + Virtualbox + Vagrant でSSH接続環境の前準備編
 Ansible のホストと対象マシンとして、２台の仮想マシンを用意します。１台の仮想マシンからもう１台の仮想マシンにSSHで接続できるようにしていきますが、ここではまず、仮想マシンを２台用意するところまでを記します。
 1. Ubuntu マシンにapt-get で VagrantとVirtualboxを導入  
