@@ -48,7 +48,8 @@ provision|"shell",inline: "echo Hello, World"|up時の処理
 
 |外部ネットワーク|
 |--|
-|config.vm.network "public_network", ip: "192.168.0.2"|
+|config.vm.network "public_network", bridge: "en1: Wi-Fi (AirPort)"|
+※特に指定しなければ、DHCP
 
 ●ポイント：
 項目|内容
